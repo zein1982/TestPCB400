@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ComPort.MainWindow">
+    <Position X="0.5" Y="1.25" Width="5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ComPort.MainWindow.PortDisplay">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\PortDisplay.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="ComPort.MainWindow.PortParamView">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\PortParamView.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="ComPort.MainWindow.WriteTerminal">
+        <TypeIdentifier>
+          <NewMemberFileName>Views\WriteTerminal.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAQAAACAAAAAAAAQAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComPort.PortModel">
+    <Position X="21" Y="3.5" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgQgAAAAAiIQAQAEAAEAEAAAEAEAAhBAAAgQGAAAA=</HashCode>
+      <FileName>Port\PortModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="receiver" />
+      <Field Name="transmitter" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="portListeners" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ComPort.Receiver">
+    <Position X="12.75" Y="7.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACCAAIAAAAAAAAQIAAEAAAgAIgAAAAAAAAA=</HashCode>
+      <FileName>Port\Receiver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="display" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ComPort.Transmitter">
+    <Position X="12.75" Y="3.5" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAEAAAAEgAAEAAAgBAgAAAAEAEAA=</HashCode>
+      <FileName>Port\Transmitter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="display" />
+      <Field Name="cycleWriteSubject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ComPort.PortListWindow" BaseTypeListCollapsed="true">
+    <Position X="7" Y="13.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>PortListWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ComPort.WMController">
+    <Position X="12.75" Y="11.25" Width="6.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAgAAACAIAAAAIAAAAAAAAAAwAAAAAA=</HashCode>
+      <FileName>WMController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="listeners" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="ComPort.IPortListener">
+    <Position X="7" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Port\PortModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ComPort.IReadDisplay">
+    <Position X="7" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAACAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Port\PortModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ComPort.IWriteDisplay">
+    <Position X="7" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Port\PortModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ComPort.IPortDisplay" Collapsed="true">
+    <Position X="7" Y="9.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Port\PortModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ComPort.ICycleWriteSubject">
+    <Position X="7" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Port\PortModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ComPort.IWMListener">
+    <Position X="7" Y="11.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>WMController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
